@@ -1,16 +1,32 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://creatureCardBase.cs" type="Script" id=1]
+[ext_resource path="res://resources/creatureCards/creatureCardBase.cs" type="Script" id=1]
 [ext_resource path="res://resources/creatureCards/spinCoots.png" type="Texture" id=2]
 
-[node name="creatureCardBase" type="MarginContainer"]
-anchor_right = 0.125
-anchor_bottom = 0.347
-margin_top = -1.52588e-05
-margin_right = -128.0
-margin_bottom = -208.2
+[node name="creatureCardBase" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 64, 104 )
 texture = ExtResource( 2 )
+
+[node name="attackValLabel" type="Label" parent="."]
+margin_top = 176.0
+margin_right = 32.0
+margin_bottom = 190.0
+text = "   5"
+
+[node name="healthValLabel" type="Label" parent="."]
+margin_left = 96.0
+margin_top = 176.0
+margin_right = 128.0
+margin_bottom = 190.0
+text = "   5"
+
+[node name="levelValLabel" type="Label" parent="."]
+margin_left = 96.0
+margin_top = 16.0
+margin_right = 128.0
+margin_bottom = 30.0
+text = "   5"

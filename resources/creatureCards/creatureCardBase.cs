@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class creatureCardBase : MarginContainer
+public class creatureCardBase : Node2D
 {
     // Declare member variables here
     // Default values for health, attack, and level

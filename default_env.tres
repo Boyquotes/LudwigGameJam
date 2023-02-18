@@ -5,3 +5,6 @@
 [resource]
 background_mode = 2
 background_sky = SubResource( 1 )
+fog_color = Color( 0.541176, 0.560784, 0.576471, 1 )
+fog_sun_color = Color( 0.85098, 0.447059, 0.0117647, 1 )
+fog_sun_amount = 0.6
