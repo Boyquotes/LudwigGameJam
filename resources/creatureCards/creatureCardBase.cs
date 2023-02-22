@@ -11,6 +11,8 @@ public class creatureCardBase : Node2D
     // Default strings for card name, passive, and active abilities
     private string creatureName, passiveAbility, activeAbility;
 
+    //private itemCardBase itemCard;
+
     // Default Constructor for base card
     public creatureCardBase() {
         creatureName = "Coots";
@@ -23,6 +25,7 @@ public class creatureCardBase : Node2D
         combatHealth = 0;
         combatAttack = 0;
         level = 1;
+        //itemCard = null;
     }
 
     // Virtual method for activating card passive
@@ -86,6 +89,23 @@ public class creatureCardBase : Node2D
     public int increaseLevel() {
         return level++;
     }
+
+    public Boolean isKnocked() {
+        return health <= 0; 
+    }
+
+    // public void equip(itemCardBase item) {
+    //     itemCard = item;
+    // }
+
+    public void _on_showCardInfo_pressed() {
+
+    }
+
+    // Display card passive and active skills
+    // public void displayPassiveActive() {
+
+    // }
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
